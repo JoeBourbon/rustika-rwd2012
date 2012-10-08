@@ -64,10 +64,6 @@ body {
     font: 16px/26px Helvetica, Helvetica Neue, Arial;
 }
 
-.wrapper {
-    width: 90%;
-    margin: 0 5%;
-}
 
 /* ===================
     ALL: Orange Theme
@@ -82,8 +78,6 @@ body {
     border-top: 20px solid #e44d26;
 }
 
-.header-container,
-.footer-container,
 .main aside {
     background: #f16529;
 }
@@ -156,10 +150,26 @@ nav a:hover {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-
-
-
-
+body {
+	background-color:#F5F2E9;
+}
+.main-container {
+}
+#contenedor-global{
+	background-color:#FFFFFF;
+	max-width:960px;
+	margin:0 auto;
+}
+.header-container,
+.footer-container{
+	background-color:#F6F4F5;
+}
+#columna-logo, #columna-menu{
+	width:50%;
+	margin:0;
+	padding:0;
+	float:left;
+}
 
 
 
@@ -181,9 +191,15 @@ nav a:hover {
     INTERMEDIATE: Menu
    ==================== */
 
+	#columna-logo, #columna-menu{
+		width:100%;
+		margin:0;
+		padding:0;
+	}
+
     nav a {
         float: left;
-        width: 27%;
+        /*width: 27%;*/
         margin: 0 1.7%;
         padding: 25px 2%;
         margin-bottom: 0;
@@ -251,14 +267,14 @@ nav a:hover {
     }
 }
 
-@media only screen and (min-width: 1140px) {
+@media only screen and (min-width: 960px) {
 
 /* ===============
     Maximal Width
    =============== */
 
     .wrapper {
-        width: 1026px; /* 1140px - 10% for margins */
+        width: 90%; /* - 10% for margins */
         margin: 0 auto;
     }
 }
